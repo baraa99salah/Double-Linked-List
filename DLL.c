@@ -8,6 +8,7 @@ struct node
 };
 typedef struct node node;
 
+//to create a list or add front of the list
 node *addFront(node *head, int x)
 {
     node *temp = (node *)malloc(sizeof(node));
@@ -38,7 +39,7 @@ void printList(node *head)
         }
     }
 }
-
+//to delete the first node of the list
 node* delfirst(node* head)
 {
 	if (head == NULL) {
@@ -53,6 +54,7 @@ node* delfirst(node* head)
 	free(temp);
 	return head;
 }
+// to delete a node by entering the value of a node
 node *deleteNode(node *head, int x)
 {
     if (head != NULL)
